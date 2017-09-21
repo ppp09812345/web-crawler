@@ -5,9 +5,12 @@
 
 import requests
 import json
-
+#上海
 url = r'http://wthrcdn.etouch.cn/weather_mini?citykey=101020100'
-#url = r'http://api.caiyunapp.com/v2/YOUR_TOKEN/121.483,31.2333/forecast'
+#宁德
+#url = r'http://wthrcdn.etouch.cn/weather_mini?citykey=101230301'
+#杭州
+# url = r'http://wthrcdn.etouch.cn/weather_mini?citykey=101210101'
 jsonStr = requests.get(url).text
 
 data = json.loads(jsonStr)
